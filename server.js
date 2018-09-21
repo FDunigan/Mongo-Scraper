@@ -27,7 +27,7 @@ process.on("unhandledRejection", error => {
 new Promise((_, reject) => reject({ test: "woops!" })).catch(() => {});
 
 mongoose.Promise = Promise;
-mongoose.connect(MONGODB_URI , { useNewUrlParser: true });
+mongoose.connect(MONGODB_URI, { useNewUrlParser: true });
 
 // Routes
 
