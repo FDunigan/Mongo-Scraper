@@ -31,7 +31,7 @@ mongoose.connect(MONGODB_URI, { useNewUrlParser: true });
 
 // Routes
 
-app.get("/scrape", function(req, res) {
+app.get("/", function(req, res) {
   request("https://www.usatoday.com/sports/mlb", function(err, response, html) {
     var $ = cheerio.load(html);
 
