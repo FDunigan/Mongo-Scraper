@@ -31,7 +31,7 @@ mongoose.connect(MONGODB_URI, { useNewUrlParser: true });
 
 // Routes
 
-app.get("/", function(req, res) {
+app.get("/scrape", function(req, res) {
   request("https://www.usatoday.com/sports/mlb", function(err, response, html) {
     var $ = cheerio.load(html);
 
@@ -100,4 +100,4 @@ app.post("/articles/:id", function(req, res) {
     });
 });
 
-app.listen(process.env.PORT || 5000)
+app.listen(process.env.PORT || 5000);

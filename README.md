@@ -2,7 +2,7 @@
 The MongoDB Scraper App is a web app that allows users to view and leave comments on the latest MLB news. It uses Mongoose and Cheerio to scrape news from USA Today. 
 
 ## Demo
-The MongoDB Scraper is deployed to Heroku. You can try the site out for yourself [here](https://intense-shelf-12614.herokuapp.com/).
+The MongoDB Scraper is deployed to Heroku. You can try the site out for yourself [here](https://whispering-oasis-87965.herokuapp.com/).
 
 ## Technologies Used
 - HTML5
