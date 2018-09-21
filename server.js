@@ -100,6 +100,4 @@ app.post("/articles/:id", function(req, res) {
     });
 });
 
-app.listen(PORT, function() {
-  console.log("App running on port " + PORT + "!");
-});
+app.listen(process.env.PORT || 5000)
